@@ -9,54 +9,76 @@
 <body>
     <header>
         <h1>Welcome to My Cooking Blog</h1>
+        <p>Your ultimate destination for delicious recipes and cooking tips!</p>
         <img src="cheflogo.jpg" alt="Cooking Blog Logo" class="logo">
         <nav>
             <ul>
-                <li><a href="index.html">Home</a></li> 
-                <li><a href="wireframes/recipes_wireframe.html">Recipes</a></li> 
+                <li><a href="index.html">Home</a></li>
+                <li><a href="wireframes/recipes_wireframe.html">Recipes</a></li>
                 <li><a href="wireframes/tip_wireframe.html">Cooking Tips</a></li>
             </ul>
         </nav>
     </header>
 
     <main>
-        <section id="home">
+        <section id="intro">
+            <h2>Explore the World of Culinary Delights</h2>
+            <p>Welcome food enthusiasts! Whether you're a seasoned chef or a kitchen newbie, we have something for you. Discover easy-to-follow recipes, essential cooking tips, and more.</p>
+        </section>
+
+        <section id="featured-recipes">
             <h2>Featured Recipes</h2>
-            <article>
-                <h3>Delicious Spaghetti</h3>
-                <img src="spaghetti.webp" alt="Delicious Spaghetti">
-                <p>A simple and delicious spaghetti recipe that's perfect for dinner.</p>
-            </article>
-            <article>
-                <h3>Chocolate Cake</h3>
-                <img src="chocolatecake.jpg" alt="Chocolate Cake">
-                <p>This rich chocolate cake is perfect for any celebration.</p>
-            </article>
+            <div class="grid">
+                <article>
+                    <img src="images/appetizers.jpg" alt="Classic Bruschetta">
+                    <h3>Classic Bruschetta</h3>
+                    <p>Start your meal with this simple and flavorful appetizer.</p>
+                    <a href="wireframes/recipes_wireframe.html#appetizers" class="btn">View Recipe</a>
+                </article>
+                <article>
+                    <img src="images/main-courses.jpg" alt="Spaghetti Bolognese">
+                    <h3>Spaghetti Bolognese</h3>
+                    <p>A hearty and classic Italian main course for any occasion.</p>
+                    <a href="wireframes/recipes_wireframe.html#main-courses" class="btn">View Recipe</a>
+                </article>
+                <article>
+                    <img src="images/desserts.jpg" alt="Chocolate Cake">
+                    <h3>Chocolate Cake</h3>
+                    <p>Rich and decadent, perfect for satisfying your sweet tooth.</p>
+                    <a href="wireframes/recipes_wireframe.html#desserts" class="btn">View Recipe</a>
+                </article>
+                <article>
+                    <img src="images/beverages.jpg" alt="Strawberry Smoothie">
+                    <h3>Strawberry Smoothie</h3>
+                    <p>A refreshing and healthy beverage to energize your day.</p>
+                    <a href="wireframes/recipes_wireframe.html#beverages" class="btn">View Recipe</a>
+                </article>
+            </div>
         </section>
 
-        <section id="recipes">
-            <h2>Recipe Collection</h2>
-            <p>Explore our wide range of recipes for every occasion.</p>
+        <section id="cooking-tips">
+            <h2>Quick Cooking Tips</h2>
+            <p>Enhance your cooking skills with our expert tips:</p>
             <ul>
-                <li><a href="#">Appetizers</a></li>
-                <li><a href="#">Main Courses</a></li>
-                <li><a href="#">Desserts</a></li>
+                <li>Master essential cooking techniques like sautéing and baking.</li>
+                <li>Discover ingredient substitutions for a healthier twist.</li>
+                <li>Learn the best kitchen tools for every task.</li>
             </ul>
+            <a href="wireframes/tip_wireframe.html" class="btn">Learn More</a>
         </section>
 
-        <section id="tips">
-            <h2>Cooking Tips</h2>
-            <p>Here are some tips to enhance your cooking skills:</p>
-            <ul>
-                <li>Use fresh ingredients for the best flavor.</li>
-                <li>Read the recipe completely before starting.</li>
-                <li>Don't be afraid to experiment!</li>
-            </ul>
+        <section id="newsletter">
+            <h2>Join Our Community</h2>
+            <p>Subscribe to receive the latest recipes, tips, and exclusive offers directly in your inbox!</p>
+            <form>
+                <input type="email" placeholder="Enter your email" required>
+                <button type="submit" class="btn">Subscribe</button>
+            </form>
         </section>
     </main>
 
     <footer>
-        <p>&copy; 2024 My Cooking Blog</p>
+        <p>&copy; 2024 My Cooking Blog by Talen Dixon</p>
         <p><a href="siteplan/siteplan.html">View Site Plan</a></p>
     </footer>
 </body>
